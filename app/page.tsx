@@ -1,5 +1,7 @@
 import Link from "next/link";
 import StickyLogo from "./components/StickyLogo";
+import Image from "next/image";
+
 
 export default function HomePage() {
   return (
@@ -90,57 +92,60 @@ export default function HomePage() {
 <section className="mx-auto max-w-6xl px-6 py-14">
   <h2 className="text-2xl font-extrabold">Galeria de Fotos</h2>
   <p className="mt-2 text-slate-600">
-    Um pouquinho da diversão e do nosso espaço 
+    Um pouquinho da diversão e do nosso espaço
   </p>
 
   {/* FESTAS */}
   <div className="mt-8">
-    <h3 className="mb-3 text-lg font-bold text-emerald-900">
-      🎉 Festas
-    </h3>
+    <h3 className="mb-3 text-lg font-bold text-emerald-900">🎉 Festas</h3>
 
     <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
       {[1, 2, 3].map((num) => (
-        <img
-          key={num}
-          src={`/Galeria/festas/${num}.png`}
-          alt={`Festa Level Kids ${num}`}
-          className="aspect-[4/3] w-full rounded-2xl object-cover shadow"
-          loading="lazy"
-        />
+        <div key={num} className="overflow-hidden rounded-2xl shadow">
+          <Image
+            src={`/Galeria/festas/${num}.png`}
+            alt={`Festa Level Kids ${num}`}
+            width={1200}
+            height={900}
+            className="aspect-[4/3] w-full object-cover"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        </div>
       ))}
     </div>
   </div>
 
   {/* ESPAÇO */}
   <div className="mt-10">
-    <h3 className="mb-3 text-lg font-bold text-emerald-900">
-      🏡 Nosso Espaço
-    </h3>
+    <h3 className="mb-3 text-lg font-bold text-emerald-900">🏡 Nosso Espaço</h3>
 
     <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
       {[1, 2, 3].map((num) => (
-        <img
-          key={num}
-          src={`/Galeria/espaco/${num}.png`}
-          alt={`Espaço Level Kids ${num}`}
-          className="aspect-[4/3] w-full rounded-2xl object-cover shadow"
-          loading="lazy"
-        />
+        <div key={num} className="overflow-hidden rounded-2xl shadow">
+          <Image
+            src={`/Galeria/espaco/${num}.png`}
+            alt={`Espaço Level Kids ${num}`}
+            width={1200}
+            height={900}
+            className="aspect-[4/3] w-full object-cover"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        </div>
       ))}
     </div>
   </div>
 
-  {/* BOTÃO */}
-  <div className="mt-10">
+    <div className="mt-10 flex justify-center">
     <Link
-      href="/Galeria"
-      className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-6 py-3 font-extrabold text-emerald-950 shadow-sm transition hover:bg-emerald-200"
+      href="/galeria"
+      className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-base font-extrabold text-white shadow-md transition hover:scale-105 hover:bg-emerald-700"
     >
-      Ver Galeria Completa <span>→</span>
+      Ver galeria completa <span className="translate-y-[1px]">→</span>
     </Link>
   </div>
+
 </section>
+
 
 
 
@@ -168,7 +173,7 @@ function Header() {
           {/* Menu */}
           <nav className="hidden items-center gap-10 md:flex">
             <NavLinkTop href="/inclui">Pacotes</NavLinkTop>
-            <NavLinkTop href="/Galeria">Galeria</NavLinkTop>
+            <NavLinkTop href="/galeria">Galeria</NavLinkTop>
             <NavLinkTop href="/cardapio">Cardápio</NavLinkTop>
           </nav>
 
