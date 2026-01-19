@@ -6,7 +6,7 @@ export default function FeedbackPage() {
       </h1>
 
       <p className="mt-4 text-lg text-slate-600">
-        Veja o que dizem sobre a experiência Level Kids.
+       EM CONSTRUÇÃO...
       </p>
     </main>
   );

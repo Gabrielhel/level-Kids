@@ -28,7 +28,7 @@ export default function GaleriaPage() {
           {Array.from({ length: 9 }, (_, i) => i + 1).map((num) => (
             <img
               key={num}
-              src={`/galeria/festas/${num}.png`}
+              src={`/Galeria/festas/${num}.png`}
               alt={`Festa Level Kids ${num}`}
               className="aspect-[4/3] w-full rounded-2xl object-cover shadow"
               loading="lazy"
@@ -48,7 +48,7 @@ export default function GaleriaPage() {
           {Array.from({ length: 14 }, (_, i) => i + 1).map((num) => (
             <img
               key={num}
-              src={`/galeria/espaco/${num}.png`}
+              src={`/Galeria/espaco/${num}.png`}
               alt={`Espaço Level Kids ${num}`}
               className="aspect-[4/3] w-full rounded-2xl object-cover shadow"
               loading="lazy"

@@ -33,7 +33,7 @@ export default function HomePage() {
   <div className="mx-auto max-w-6xl px-6">
     <h2 className="text-3xl font-extrabold text-emerald-950">Destaques</h2>
     <p className="mt-2 text-emerald-950/70">
-      Tudo o que você precisa para uma festa inesquecível ✨
+      Tudo o que você precisa para uma festa inesquecível 
     </p>
 
     {/* Cards */}

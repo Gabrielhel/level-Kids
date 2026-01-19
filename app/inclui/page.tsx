@@ -6,7 +6,7 @@ export default function IncluiPage() {
       </h1>
 
       <p className="mt-4 text-lg text-slate-600">
-        Tudo o que preparamos para sua festa ser perfeita.
+        EM CONSTRUÇÃO
       </p>
     </main>
   );

@@ -6,7 +6,7 @@ export default function CardapioPage() {
       </h1>
 
       <p className="mt-4 text-lg text-slate-600">
-        Opções deliciosas para crianças e adultos.
+        EM CONSTRUÇÃO...
       </p>
     </main>
   );
