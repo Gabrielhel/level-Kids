@@ -103,7 +103,7 @@ export default function HomePage() {
       {[1, 2, 3].map((num) => (
         <img
           key={num}
-          src={`/galeria/festas/${num}.png`}
+          src={`/Galeria/festas/${num}.png`}
           alt={`Festa Level Kids ${num}`}
           className="aspect-[4/3] w-full rounded-2xl object-cover shadow"
           loading="lazy"
@@ -122,7 +122,7 @@ export default function HomePage() {
       {[1, 2, 3].map((num) => (
         <img
           key={num}
-          src={`/galeria/espaco/${num}.png`}
+          src={`/Galeria/espaco/${num}.png`}
           alt={`Espaço Level Kids ${num}`}
           className="aspect-[4/3] w-full rounded-2xl object-cover shadow"
           loading="lazy"
@@ -134,7 +134,7 @@ export default function HomePage() {
   {/* BOTÃO */}
   <div className="mt-10">
     <Link
-      href="/galeria"
+      href="/Galeria"
       className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-6 py-3 font-extrabold text-emerald-950 shadow-sm transition hover:bg-emerald-200"
     >
       Ver Galeria Completa <span>→</span>
@@ -168,7 +168,7 @@ function Header() {
           {/* Menu */}
           <nav className="hidden items-center gap-10 md:flex">
             <NavLinkTop href="/inclui">Pacotes</NavLinkTop>
-            <NavLinkTop href="/galeria">Galeria</NavLinkTop>
+            <NavLinkTop href="/Galeria">Galeria</NavLinkTop>
             <NavLinkTop href="/cardapio">Cardápio</NavLinkTop>
           </nav>
 
