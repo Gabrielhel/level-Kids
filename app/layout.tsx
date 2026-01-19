@@ -1,32 +1,22 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
+import { Fredoka } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fredoka = Fredoka({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-fredoka",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata = {
+export const metadata: Metadata = {
   title: "Level Kids — Universo Encantado",
-  description: "Festas infantis na selva, com bichinhos e muita diversão.",
+  description: "Festas infantis inesquecíveis na selva!",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="pt-BR">
+      <body className={`${fredoka.variable} font-sans bg-[#FAF7F0] text-slate-800`}>
         {children}
       </body>
     </html>
