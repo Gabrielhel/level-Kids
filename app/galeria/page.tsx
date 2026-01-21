@@ -25,7 +25,7 @@ export default function GaleriaPage() {
         <p className="mt-2 text-slate-600">Momentos incríveis na selva.</p>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-          {Array.from({ length: 9 }, (_, i) => i + 1).map((num) => (
+          {Array.from({ length: 23 }, (_, i) => i + 1).map((num) => (
             <img
               key={num}
               src={`/Galeria/festas/${num}.png`}
