@@ -3,27 +3,31 @@ import Header from "../components/Header";
 
 const blocos = [
   {
-    title: "👩‍🏫 Equipe & Monitoria",
+    title: "👩‍🏫 EQUIPE E MONITORIA",
     items: [
-      "Monitores para acompanhar as crianças",
-      "Brincadeiras guiadas e suporte durante a festa",
-      "Organização do fluxo (entrada, parabéns, lanche)",
+      "Recepcionista, monitores, recreacionistas, garçom e coordenador operacional",
+      "Brincadeiras guiadas e acompanhamento durante toda a festa",
+      "Organização completa do fluxo: chegada, parabéns e alimentação",
+     
     ],
   },
   {
-    title: "🌿 Espaço Temático",
+    title: "🌿 ESPAÇO TEMÁTICO",
     items: [
-      "Ambiente seguro e pensado para crianças",
-      "Área de brincadeiras + espaços para responsáveis",
-      "Estrutura completa para receber convidados",
+      "Ambiente seguro, lúdico e pensado especialmente para crianças",
+      "Áreas de brincadeiras + espaço de convivência para pais e responsáveis (com mesa de sinuca)",
+      "Mobiliário moderno e confortável",
+      "Mini quadra de futebol",
+      "Simuladores e fliperamas",
+      "Arvorismo externo",
     ],
   },
   {
-    title: "🎈 Decoração & Clima da Festa",
+    title: "🎈 DECORAÇÃO E CLIMA DA FESTA",
     items: [
-      "Decoração base do espaço (selva/encantado)",
-      "Apoio para montagem de mesa / parabéns",
-      "Orientação de layout para deixar tudo lindo",
+      "Decoração base do espaço com arranjo de mesa",
+      "Orientação de layout e plano de chão personalizado",
+      "Duração do evento: 4h",
     ],
   },
   {
@@ -31,17 +35,20 @@ const blocos = [
     items: [
       "Ambiente limpo e organizado",
       "Banheiros e áreas de apoio",
-      "Equipe preparada para ajudar durante o evento",
+      "Ambiente climatizado",
+      "Sistema de som equalizado com conexão Bluetooth",
+      "Sistema de microfone sem fio",
     ],
   },
 ];
 
 const extras = [
-  "🍰 Bolo temático (sob encomenda)",
-  "🍬 Docinhos personalizados",
+  "🎂 Bolo temático (sob encomenda)",
+  "🍭 Docinhos personalizados",
+  "✨ Decoração premium",
   "🎭 Animação / personagens",
   "📸 Fotografia",
-  "🧸 Lembrancinhas",
+  "🎬 Vídeo da festa (videomaker)",
 ];
 
 export default function IncluiPage() {
