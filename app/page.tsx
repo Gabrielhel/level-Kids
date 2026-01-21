@@ -158,15 +158,15 @@ function Header() {
   return (
     <header className="fixed inset-x-0 top-4 z-50">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="flex items-center justify-between rounded-[34px] bg-white/85 px-6 py-3 shadow-xl backdrop-blur-md">
+        <div className="relative flex items-center justify-center rounded-[34px] bg-white/85 px-6 py-3 shadow-xl backdrop-blur-md md:justify-between">
           {/* Logo */}
-          <a href="#topo" className="relative block w-[180px]">
+          <a href="#topo" className="absolute left-6 md:static">
             <div className="h-10" />
             <StickyLogo
               src="/hero-logo.png"
               alt="Level Kids"
               showAfter={180}
-              className="absolute -top-12 left20 h-32 w-auto drop-shadow-2xl"
+              className="absolute -top-6 left0 h-32 w-auto drop-shadow-2xl"
             />
           </a>
 
@@ -180,6 +180,8 @@ function Header() {
           {/* CTA */}
           <a
             href="https://wa.me/5547999328029"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-emerald-600 px-6 py-2 text-sm font-extrabold tracking-wide text-white shadow-md transition hover:scale-105 hover:bg-emerald-700"
           >
             AGENDE SUA FESTA

@@ -33,6 +33,8 @@ export default function FeedbackPage() {
 
             <a
               href="https://wa.me/5547999328029"
+              target="_blank"
+rel="noopener noreferrer"
               className="rounded-full bg-emerald-700 px-6 py-3 font-extrabold text-white shadow hover:bg-emerald-800"
             >
               Chamar no WhatsApp
